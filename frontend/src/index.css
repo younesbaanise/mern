@@ -1,0 +1,532 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+}
+
+/* Login */
+
+.login {
+  background: linear-gradient(71deg, #feaf00 19.35%, #f8d442 90.12%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .container {
+  width: 600px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 41px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login h1 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  border-left: 10px solid #f8d442;
+  padding-left: 12.5px;
+}
+
+.login h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 43px;
+  margin-bottom: 9px;
+}
+
+.login p {
+  color: #6c6c6c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.login h3 {
+  color: #6c6c6c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.login span {
+  color: #feaf00;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login form input {
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  width: 415px;
+  height: 44px;
+}
+
+.login form input::placeholder {
+  color: #cdcdcd;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 15px;
+}
+
+.login .email {
+  margin-top: 50px;
+}
+
+.login .passwrd {
+  margin-top: 20px;
+}
+
+.login button{
+  border-radius: 4px;
+  background: #feaf00;
+  padding: 14px 80px ;
+  border: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: white;
+  margin: 30px 0;
+  cursor: pointer;
+  margin-left: 97px;
+
+}
+
+/* Main content */
+
+main {
+  display: flex;
+}
+
+.sideBar {
+  width: 270px;
+  background-color: #f2eae1;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 1100px;
+}
+
+.sideBar h1 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  border-left: 5px solid #f8d442;
+  padding-left: 12.5px;
+}
+
+.sideBar .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sideBar img {
+  border-radius: 50%;
+  margin-top: 50px;
+  width: 135px;
+}
+
+.sideBar .name {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.sideBar .role {
+  margin-top: 0;
+  color: #feaf00;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 91px;
+}
+
+.sideBar .logOut,
+.sideBar .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.sideBar .logOut {
+  position: relative;
+  top: -10rem;
+}
+
+.sideBar .logOut p,
+.sideBar .home p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Main Content */
+
+.mainContent {
+  width: calc(144% - 270px);
+  background-color: #f8f8f8;
+}
+
+.mainContent .wrapper {
+  padding: 0 30px;
+}
+
+.uploadImage {
+  cursor: help;
+}
+
+
+.mainContent .titles th {
+  color: #acacac;
+  font-size: 12px;
+
+  font-weight: 600;
+  line-height: normal;
+}
+
+.search {
+  height: 60px;
+  display: flex;
+  background-color: #fff;
+  justify-content: flex-end;
+  padding: 12px 51px;
+}
+
+.search .wrapper {
+  display: flex;
+  gap: 27px;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .bell {
+  width: 17px;
+  height: 20px;
+}
+.search .inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  height: 37px;
+  width: 212px;
+  padding: 9px 13px 11px;
+}
+
+.search input {
+  border: none;
+  width: 100%;
+}
+
+.search input::placeholder {
+  color: #c4c4c4;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+
+.add::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #e5e5e5;
+  width: calc(100% - 60px);
+  bottom: 0;
+}
+
+.add p {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.add button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 4px;
+  background-color: #feaf00;
+  width: 199px;
+  height: 44px;
+  border: none;
+}
+
+.singleUser {
+  height: 85px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 13px;
+  margin: 10px 0;
+}
+
+.singleUser img {
+  width: 64px;
+  border-radius: 10px;
+}
+
+.singleUser .name,
+.mainContent .titles .name {
+  margin: 0 100px 0 31px;
+}
+
+.singleUser .email {
+  margin-right: 45px;
+}
+
+.mainContent .titles .email {
+  margin-right: 155px;
+}
+
+.singleUser .date {
+  margin-right: 100px;
+}
+
+.singleUser .number {
+  margin-right: 41px;
+}
+
+.mainContent .titles .number {
+  margin-right: 88px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.singleUser .enrole {
+  margin-right: 85px;
+}
+.mainContent .titles .enrole {
+  margin-right: 125px;
+}
+.singleUser td {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.singleUser .edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
+
+.singleUser .edit .icon {
+  width: 19px;
+  height: 19px;
+  color: #feaf00;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+}
+.formContainer label {
+  color: #201e1e;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  margin-top: 20px;
+  margin-bottom: 14px;
+  margin-left: 15px;;
+}
+
+.formContainer h2 {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.formContainer input {
+  color: #201e1e;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  margin-top: -7px;
+  margin-bottom: 6px;
+}
+.formContainer form {
+  background-color: white;
+  padding: 17px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer form button {
+  width: 199px;
+  height: 44px;
+  background-color: #feaf00;
+  color: white;
+  border: none;
+  align-self: flex-end;
+  margin: 30px;
+}
+.formContainer form input {
+  border: 1px solid #c7c7c7;
+  background-color: #fff;
+  width: 638px;
+  height: 43px;
+}
+
+.formContainer .uploadImage {
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  border: 1px dashed #c7c7c7;
+  padding: 16px 24px;
+  gap: 16px;
+  height: 72px;
+}
+
+.formContainer .imagePromps p {
+  margin: 0;
+  color: #414040;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.formContainer .imagePromps span {
+  color: #3980cd;
+}
+
+.formContainer .imagePromps .second {
+  color: #9b9a9a;
+}
+
+.upicn {
+  color: #9b9a9a;
+}
+.formContainer .uploadIcon {
+  width: 40px;
+  height: 40px;
+  background-color: #efe9e9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.singleUser {
+  margin: 43px 0 10px 0;
+}
+
+
+.home svg {
+  height: 23px;
+  width: 38px;
+}
+
+.logOut svg {
+  height: 23px;
+  width: 38px;
+}
+
+.ligne {
+  width: 100%;
+}
+
+.tbodyLeft {
+  position: relative;
+  left: 30px;
+}
+
+.trToleft {
+  position: relative;
+  left: -50rem;
+}
+
+.trToleft th.image {
+  position: absolute;
+}
+
+.trToleft th.name {
+  position: absolute;
+  right: 6rem;
+  top: 10px;
+}
+
+.trToleft th.email {
+  position: absolute;
+  right: -11rem;
+  top: 10px;
+}
+
+.trToleft th.number {
+  position: absolute;
+  right: -21rem;
+  top: 10px;
+}
+
+.trToleft th.enrole {
+  position: absolute;
+  right: -31rem;
+  top: 10px;
+}
+
+.trToleft th.date {
+  position: absolute;
+  right: -41rem;
+  top: 10px;
+}
