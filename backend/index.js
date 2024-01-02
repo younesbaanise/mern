@@ -7,7 +7,7 @@ const UserModel = require("./models/Users")
 const app = express()
 app.use(cors(
   {
-    origin: ["https://test-repo-frontend.vercel.app"],
+    origin: ["https://mern-crud-hazel.vercel.app"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true
   }
