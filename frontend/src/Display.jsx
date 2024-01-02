@@ -14,13 +14,13 @@ function Display() {
 
   useEffect(() => {
     axios
-      .get("https://test-repo-six-ruby.vercel.app/")
+      .get("https://simple-app-gold.vercel.app/")
       .then((result) => setUsers(result.data))
       .catch((err) => console.log(err));
   }, []);
   const handleDelete = (id) => {
     axios
-      .delete("https://test-repo-six-ruby.vercel.app/deleteUser/" + id)
+      .delete("https://simple-app-gold.vercel.app/deleteUser/" + id)
       .then((res) => {
         console.log(res);
         window.location.reload();

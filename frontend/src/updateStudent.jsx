@@ -21,7 +21,7 @@ function UpdateUser() {
 
   useEffect(() => {
     axios
-      .get("https://test-repo-six-ruby.vercel.app/getUser" + id)
+      .get("https://simple-app-gold.vercel.app/getUser" + id)
       .then((result) => {
         console.log(result);
 
@@ -37,7 +37,7 @@ function UpdateUser() {
   const update = (e) => {
     e.preventDefault();
     axios
-      .put("https://test-repo-six-ruby.vercel.app/updateUser/" + id, {
+      .put("https://simple-app-gold.vercel.app/updateUser/" + id, {
         firstName,
         lastName,
         email,

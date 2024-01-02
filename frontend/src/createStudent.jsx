@@ -19,7 +19,7 @@ function CreateUser() {
   const Submit = (e) => {
     e.preventDefault();
     axios
-      .post("https://test-repo-six-ruby.vercel.app/createUser", {
+      .post("https://simple-app-gold.vercel.app/createUser", {
         firstName,
         lastName,
         email,
